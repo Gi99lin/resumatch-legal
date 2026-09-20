@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ResuMatch</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="header-row">
+    <a class="home" href="./index-en.html">← ResuMatch</a>
+    <a class="lang" href="./privacy.html">RU</a>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Revision of September 20, 2026</p>
+</header>
+
+<p class="lead">This document explains what data the ResuMatch Telegram bot (<a href="https://t.me/GigglinReviewbot">@GigglinReviewbot</a>) collects, why it's needed, who it's shared with, and how to delete it. It's written so it can be read start to finish.</p>
+
+<div class="card">
+  <h2>In short</h2>
+  <p>The bot receives your resume in order to analyze it. Its text is sent to an external AI service outside your country of residence — the service can't work without this. We don't sell data and don't show ads. You can delete everything stored about you at any time, without explanation, with the <code>/delete_my_data</code> command in the bot.</p>
+</div>
+
+<h2>1. Who processes the data</h2>
+<p>The service is operated by an individual — the owner of the Telegram account <a href="https://t.me/Gigglin">@Gigglin</a> (hereinafter "the Operator", "we"). You can reach the Operator on Telegram or by email at <a href="mailto:support@gigglin.tech">support@gigglin.tech</a>.</p>
+<p>The service exists only as a Telegram bot. It has no separate website, app, or account dashboard.</p>
+
+<h2>2. What data we collect</h2>
+<p>Only what the service needs to run. We don't buy anything from third parties or collect from external sources.</p>
+
+<div class="scroll">
+<table>
+<thead><tr><th>Category</th><th>What exactly</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Profile</td><td>Telegram ID, @username, name and surname from your profile, interface language</td><td>Sent by Telegram on your first interaction with the bot</td></tr>
+<tr><td>Resume</td><td>File name, type, size, extracted text, and structured data from it: full name, contacts, work experience, education, skills</td><td>You upload the file yourself</td></tr>
+<tr><td>Work results</td><td>Resume score, breakdown, tips, rewritten versions, cover letters</td><td>Created by the service at your request</td></tr>
+<tr><td>Job postings</td><td>Job posting text, if you send it for matching or a cover letter</td><td>You send it yourself</td></tr>
+<tr><td>In-bot actions</td><td>Event log: which buttons were pressed and when, dialog state</td><td>Logged automatically</td></tr>
+<tr><td>Payments</td><td>Amount, currency, status, invoice ID, what was purchased</td><td>Created at the time of payment</td></tr>
+<tr><td>Support requests</td><td>Text of a bug report, if you sent one with the <code>/report</code> command</td><td>You send it yourself</td></tr>
+</tbody>
+</table>
+</div>
+
+<p><strong>We don't collect</strong> or request: phone number, address, passport data, bank details, card numbers, geolocation, or your contact list. We never see your card or wallet details — they stay with the payment service.</p>
+
+<h2>3. Why we need it</h2>
+<ul>
+  <li><strong>To provide the service.</strong> Analyze the resume, give advice, rewrite the text, draft a cover letter, match job openings.</li>
+  <li><strong>To keep your result.</strong> So you can come back to your breakdown later without uploading the file again.</li>
+  <li><strong>To process payment</strong> and avoid delivering what was paid for twice or not at all.</li>
+  <li><strong>To understand what's broken in the service.</strong> The action log shows where people get stuck. We look at it in aggregate across the product, not to read your individual steps out of curiosity.</li>
+  <li><strong>To protect against abuse</strong> — for example, automated requests that exhaust other users' limits.</li>
+</ul>
+
+<h2>4. Who the data is shared with</h2>
+<p>This is the most important section, and we describe it in detail.</p>
+
+<h3>AI processing</h3>
+<p>To analyze a resume, rewrite it, or draft a cover letter, its text is sent to a large language model through the <a href="https://openrouter.ai/">OpenRouter</a> router. The primary model is <strong>Claude Sonnet 5 by Anthropic</strong>. If your resume is a scan with no text layer (for example, a photographed document), a <strong>Gemini vision model by Google</strong> is additionally used (also through OpenRouter) to recognize the text on the pages. OpenRouter, Anthropic, and Google are US companies, so your data crosses a border. By uploading a resume, you agree to this transfer. The service cannot work at all without it.</p>
+<p>The resume text and job posting text are transmitted — including your name and contact details if they appear in your file. If you don't want to share them, remove them from the file before uploading: it barely affects the quality of the assessment.</p>
+
+<h3>Telegram</h3>
+<p>The service runs inside Telegram, and everything you send to the bot passes through Telegram's infrastructure under its own privacy policy.</p>
+
+<h3>Payment services</h3>
+<p>When you pay, payment data is processed by whichever payment service you chose: <strong>Telegram Stars</strong>, <strong>Crypto Pay</strong> (the @CryptoBot bot, cryptocurrency payment), or <strong>Lava.top</strong> (card or SBP payment) — depending on what's connected at the time of payment. They receive the amount, payment purpose, and an identifier that links the payment to your account. Your card, crypto wallet, or bank account details are never passed to or stored by the Operator.</p>
+
+<h3>Hosting</h3>
+<p>The database and files are stored on a rented server. As with any rented server, the hosting provider has technical access to the disk.</p>
+
+<h3>What we don't do</h3>
+<p>We don't sell data. We don't share it with advertisers, recruiters, staffing agencies, or employers. We don't publish your resume or show it to other users. We don't use your data to train our own models.</p>
+
+<h2>5. How long it's kept</h2>
+<ul>
+  <li><strong>Profile, resume, and results</strong> — until you delete them yourself or delete your account.</li>
+  <li><strong>Action log</strong> — 180 days, then deleted automatically.</li>
+  <li><strong>Payment records</strong> — kept even after account deletion, but anonymized: the link to your profile is severed, leaving only the amount, date, and status. This is needed for accounting and resolving payment disputes.</li>
+</ul>
+
+<h2>6. How to delete your data</h2>
+<p>Send the bot the <code>/delete_my_data</code> command and confirm with the button. Deletion is immediate and complete: your resumes, breakdowns, letters, and action log are deleted along with your profile. This is irreversible — we cannot restore them.</p>
+<p>If something isn't being deleted, or you'd like a copy of your data, write to the Operator on Telegram (<a href="https://t.me/Gigglin">@Gigglin</a>) or by email at <a href="mailto:support@gigglin.tech">support@gigglin.tech</a>. We reply within a reasonable time, usually within 30 days.</p>
+
+<h2>7. Your rights</h2>
+<p>You can: find out what data we hold about you; get a copy of it; correct inaccuracies; delete everything; withdraw consent to processing. Withdrawing consent means deleting your account — without processing your resume, the service can't perform its only function.</p>
+
+<h2>8. Security</h2>
+<p>Connections to Telegram and AI services are protected by TLS. Only the Operator has access to the database. To be candid: the service is run by one person, not a team with a security department. Absolute protection doesn't exist. Don't upload documents whose leak would be critical to you.</p>
+
+<h2>9. Age</h2>
+<p>The service is intended for people aged 16 and older. If you're younger, use it with a parent's or guardian's consent.</p>
+
+<h2>10. Changes</h2>
+<p>We may update this policy. The date at the top of the document always shows the current revision. We'll announce significant changes with a message in the bot.</p>
+
+<h2>11. Contact</h2>
+<p>The Operator is an individual, owner of the Telegram account <a href="https://t.me/Gigglin">@Gigglin</a>. Write there or to <a href="mailto:support@gigglin.tech">support@gigglin.tech</a> about any data question — access, correction, deletion, a copy.</p>
+
+<footer>
+  ResuMatch · <a href="./terms-en.html">Terms of Use</a> · <a href="./index-en.html">Home</a>
+</footer>
+</div>
+</body>
+</html>

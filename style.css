@@ -28,6 +28,9 @@ body {
 header { border-bottom: 1px solid var(--rule); padding-bottom: 20px; margin-bottom: 32px; }
 .home { color: var(--accent); text-decoration: none; font-size: 14px; font-weight: 500; }
 .home:hover { text-decoration: underline; }
+.header-row { display: flex; align-items: center; }
+.lang { margin-left: auto; color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; }
+.lang:hover { color: var(--accent); text-decoration: underline; }
 h1 { font-size: 26px; line-height: 1.25; margin: 16px 0 6px; letter-spacing: -0.01em; }
 h2 { font-size: 18px; margin: 34px 0 10px; letter-spacing: -0.005em; }
 h3 { font-size: 15px; margin: 22px 0 6px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
